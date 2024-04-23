@@ -6,7 +6,7 @@ import { SIGN_UP_URL, SIGN_IN_URL, CONTACT_US_URL } from "./Urls";
 
 export const PAGE_NAME_HOME = "home";
 export const PAGE_NAME_PRICING = "pricing";
-export const PAGE_NAME_ABOUT_US = "about";
+export const PAGE_NAME_ABOUT_US = "blog";
 export const PAGE_NAME_CONTACT_US = "contact";
 export const PAGE_NAME_START_FREE = "start_free";
 export const PAGE_NAME_LOGIN = "login";
@@ -19,7 +19,7 @@ export type iMenuItem = {
 export const allMenuItems: iMenuItem[] = [
   { name: PAGE_NAME_HOME, href: "/" },
   { name: PAGE_NAME_PRICING, href: `/pricing` },
-  { name: PAGE_NAME_ABOUT_US, href: `/about` },
+  { name: PAGE_NAME_ABOUT_US, href: `/blog` },
   { name: PAGE_NAME_CONTACT_US, href: CONTACT_US_URL },
   { name: PAGE_NAME_START_FREE, href: SIGN_UP_URL },
   { name: PAGE_NAME_LOGIN, href: SIGN_IN_URL },
@@ -88,7 +88,7 @@ export default function PageHeader({
   };
 
   return (
-    <div className={"app-header bg-transparent"}>
+    <div className={"app-header"}>
       <header className="w-full">
         <nav
           className="mx-auto flex container items-center justify-between py-4 px-3"

@@ -5,11 +5,13 @@ const MainSlideShow = () => {
   return (
     <div
       className={
-        "flex flex-col lg:flex-row items-stretch justify-stretch py-32 lg:px-32 px-10 container mx-auto"
+        "flex flex-col lg:flex-row items-center justify-stretch py-24 lg:px-18 px-10 container mx-auto gap-2"
       }
     >
-      <div className="lg:w-7/12 bg-[url('/images/main-slide.png')] bg-contain bg-center bg-no-repeat min-h-96"></div>
-      <div className="lg:w-5/12 py-16">
+      <div className="bg-[url('/images/main-slide.png')] bg-contain bg-center bg-no-repeat min-h-96 lg:h-[600px] w-full">
+        &nbsp;
+      </div>
+      <div className="lg:w-6/12 py-16">
         <h3 className="text-4xl lg:text-5xl">
           Manage your <br />
           content at one place
