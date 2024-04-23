@@ -4,6 +4,7 @@ import { useState } from "react";
 import AppLogo from "./AppLogo";
 import Image from "next/image";
 import { CONTACT_US_URL } from "./Urls";
+import PageSection from "./PageSection";
 
 type iPageFooter = {
   currentPageName?: string;
@@ -12,7 +13,7 @@ type iPageFooter = {
 export default function PageFooter() {
   return (
     <div className={"app-footer bg-transparent"}>
-      <div className="w-full container mx-auto flex gap-8 mb-24">
+      <PageSection extraClassName="w-full container mx-auto flex gap-8 mb-24 flex-col xl:flex-row">
         <div className="xl:w-1/4">
           <AppLogo className="mb-6" width={240} />
           <p className="my-4 leading-8">
@@ -116,7 +117,7 @@ export default function PageFooter() {
             />
           </div>
         </div>
-      </div>
+      </PageSection>
       <div className="w-full py-6 bg-blue-100">
         <div className="container mx-auto text-center">
           Copyrights © ShowMine Pty Ltd, Since 2017
