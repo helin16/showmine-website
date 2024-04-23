@@ -1,53 +1,62 @@
 import Image from "next/image";
+import {
+  EXTERNAL_URL_FACEBOOK_PAGE,
+  EXTERNAL_URL_LINKEDIN_PAGE,
+  EXTERNAL_URL_MAGENTO,
+  EXTERNAL_URL_WECHAT_MOMENTS,
+  EXTERNAL_URL_WECHAT_OFFICIAL_ACC,
+  EXTERNAL_URL_WORDPRESS,
+  EXTERNAL_URL_X,
+} from "../Urls";
 
 export const integrationsIcons = [
   {
     title: "WeChat",
     description: "Official Accounts",
     imageSrc: "/images/wechat.png",
-    url: "https://mp.weixin.qq.com/",
+    url: EXTERNAL_URL_WECHAT_OFFICIAL_ACC,
   },
   {
     title: "Facebook",
     description: "Facebook Pages",
     imageSrc: "/images/facebook.png",
-    url: "https://www.facebook.com/business/tools/facebook-pages",
+    url: EXTERNAL_URL_FACEBOOK_PAGE,
   },
   {
     title: "WordPress",
     description: "Website",
     imageSrc: "/images/WordPress_blue_logo.png",
-    url: "https://wordpress.com/",
+    url: EXTERNAL_URL_WORDPRESS,
   },
   {
     title: "Mini App",
     description: "WeChat Mini App",
     imageSrc: "/images/Mini_Program.png",
-    url: "https://mp.weixin.qq.com",
+    url: EXTERNAL_URL_WECHAT_OFFICIAL_ACC,
   },
   {
     title: "Twitter",
     description: "Social Media",
     imageSrc: "/images/x.png",
-    url: "https://twitter.com/",
+    url: EXTERNAL_URL_X,
   },
   {
     title: "Magento",
     description: "Website (coming soon)",
     imageSrc: "/images/magento.png",
-    url: "https://magento.com/",
+    url: EXTERNAL_URL_MAGENTO,
   },
   {
     title: "Moments",
     description: "Social (coming soon)",
     imageSrc: "/images/moments.png",
-    url: "https://en.wikipedia.org/wiki/Moments_(social_networking)",
+    url: EXTERNAL_URL_WECHAT_MOMENTS,
   },
   {
     title: "Linkedin",
     description: "Page(coming soon)",
     imageSrc: "/images/linkedin.png",
-    url: "https://business.linkedin.com/marketing-solutions/linkedin-pages",
+    url: EXTERNAL_URL_LINKEDIN_PAGE,
   },
 ];
 

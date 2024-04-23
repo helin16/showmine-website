@@ -2,6 +2,18 @@ import ContactUsForm from "@/components/ContactUsForm";
 import Page from "@/components/Page";
 import { PAGE_NAME_CONTACT_US } from "@/components/PageHeader";
 import PageSection from "@/components/PageSection";
+import {
+  EXTERNAL_URL_ALI_PAY,
+  EXTERNAL_URL_FACEBOOK_PAGE,
+  EXTERNAL_URL_MAGENTO,
+  EXTERNAL_URL_MERP,
+  EXTERNAL_URL_PAYPAL,
+  EXTERNAL_URL_SQUARE_UP,
+  EXTERNAL_URL_WECHAT_OFFICIAL_ACC,
+  EXTERNAL_URL_WECHAT_PAY,
+  EXTERNAL_URL_WORDPRESS,
+  EXTERNAL_URL_X,
+} from "@/components/Urls";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,12 +42,12 @@ const ContactUsPage = () => {
                     {
                       name: "WordPress",
                       img: "/images/WordPress_blue_logo.png",
-                      link: "https://wordpress.com/",
+                      link: EXTERNAL_URL_WORDPRESS,
                     },
                     {
                       name: "Magento",
                       img: "/images/magento.png",
-                      link: "https://business.adobe.com/au/products/magento/magento-commerce.html",
+                      link: EXTERNAL_URL_MAGENTO,
                     },
                   ],
                 },
@@ -45,12 +57,17 @@ const ContactUsPage = () => {
                     {
                       name: "WeChat",
                       img: "/images/wechat.png",
-                      link: "https://open.weixin.qq.com/?lang=en",
+                      link: EXTERNAL_URL_WECHAT_OFFICIAL_ACC,
                     },
                     {
                       name: "Facebook",
                       img: "/images/facebook.png",
-                      link: "https://www.facebook.com/",
+                      link: EXTERNAL_URL_FACEBOOK_PAGE,
+                    },
+                    {
+                      name: "X",
+                      img: "/images/x.png",
+                      link: EXTERNAL_URL_X,
                     },
                   ],
                 },
@@ -60,17 +77,17 @@ const ContactUsPage = () => {
                     {
                       name: "WeChat Pay",
                       img: "/images/wechat_pay.png",
-                      link: "https://pay.weixin.qq.com/index.php/public/wechatpay",
+                      link: EXTERNAL_URL_WECHAT_PAY,
                     },
                     {
                       name: "Alipay",
                       img: "/images/Alipay_logo.png",
-                      link: "https://intl.alipay.com/",
+                      link: EXTERNAL_URL_ALI_PAY,
                     },
                     {
                       name: "Paypal",
                       img: "/images/paypal.png",
-                      link: "https://www.paypal.com/au/home",
+                      link: EXTERNAL_URL_PAYPAL,
                     },
                     {
                       name: "Bankcards",
@@ -85,12 +102,12 @@ const ContactUsPage = () => {
                     {
                       name: "Square Up",
                       img: "/images/square-logo.png",
-                      link: "https://squareup.com/au/en",
+                      link: EXTERNAL_URL_SQUARE_UP,
                     },
                     {
                       name: "MERP",
                       img: "/images/merp-logo.png",
-                      link: "https://www.merp.com.au/",
+                      link: EXTERNAL_URL_MERP,
                     },
                   ],
                 },
